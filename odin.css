@@ -1,0 +1,91 @@
+* {
+    box-sizing:border-box;
+    background:gray;
+    margin:0;
+    padding:0;
+}
+/*For ease of editing*/
+/*.wrapper {border: solid 5px red;}
+.inner {border:solid 1px blue;}*/
+/*comment out when finished*/
+
+/*class functions*/
+.absolute {position:absolute;}
+.absolute-center {position:absolute; left:0; right:0; margin-left:auto; margin-right:auto;
+margin-top:auto; margin-bottom:auto;}
+.relative {position:relative;}
+.width-global {width:80%; margin-right:auto; margin-left:auto;}
+/*Sections*/
+
+/*main-header global*/
+.main-header {background-color:#1F2937;}
+.main-header * {background-color:inherit; color:#F9FAF8;}
+.main-header {display:grid;
+grid-template-columns:1fr 1fr; 
+grid-template-rows:auto auto;
+grid-template-areas: "header header"
+"left-content placeholder"}
+/*main-header nav*/
+.main-header nav {grid-column:span 2; margin-right:auto; margin-left:auto;}
+.main-header ul {list-style:none;
+    display:flex; justify-content:flex-start;
+    align-items:center;}
+.main-header a {text-decoration:none;}
+.logo {flex-grow:1; flex-basis:100px;}
+/*main-header left side*/
+.left-content-box button {background-color:#3882F6;
+padding-left:10px; padding-right:10px;
+border-radius:5px;
+border-style:none;}
+.left-content-box {width:80%; margin-left:auto; 
+    padding-top:4rem; padding-bottom:4rem;}
+.left-content-box h1 {font-size:2.5rem;}
+/*main-header right side*/
+.right-content-box {width:80%; margin-right:auto;
+    padding-top:2rem; padding-bottom:2rem;
+display:flex; justify-content:center; align-items:center;}
+.placeholder-image {background-color:gray; width:100%; height:100%;
+display:flex; justify-content:center; align-items:center;}
+.placeholder-image p {width:fit-content;}
+
+/*Some Random Content Global*/
+.section-one {background-color:#F9FAF8; padding-top:16px; padding-bottom:48px;}
+.section-one * {background-color:#F9FAF8;}
+/*Some Random Content Header*/
+.section-one header {text-align:center;}
+/*Some Random Content Illustrations*/
+.illustrations-container { width:70%; display:flex; flex-wrap:wrap; justify-content:space-around;}
+.rounded-box-container {width:100px;}
+.rounded-box {width:100px; height:100px; border-radius:5px;
+border:solid 3px blue; margin-left:auto; margin-right:auto;}
+.rounded-box-container p {width: 100%;margin-left:5%; margin-right:5%;}
+
+/*Quote Section*/
+.section-two {background-color:lightslategrey;}
+.section-two * {background-color:lightslategrey;}
+.section-two blockquote { width:70%; padding-top:2rem; padding-bottom:2rem;
+font-size:2.1rem;}
+.author {text-align:right;}
+
+/*Call to Action Section */
+.section-three {background-color:#F9FAF8; padding-top:2rem; padding-bottom:2rem;}
+.section-three * {background-color:#F9FAF8;}
+
+    /*Box-Global*/
+.call-to-action {background-color:#3882F6; padding-top:2rem; padding-bottom:2rem;
+border-radius:8px;
+display:flex; flex-wrap:wrap; justify-content:center; align-content:flex-end;}
+.call-to-action * {background-color:#3882F6; color:#F9FAF8;}
+
+    /*left-side*/
+.cta-content {padding-left:1rem;padding-right:16px; flex-basis:80%;}    
+    /*right-side*/
+
+.cta-button-container {flex-grow:1;
+display:flex; justify-content:center;
+align-items:center;}
+.cta-button-container button {margin-right:2rem; border:solid 2px #F9FAF8;
+border-radius:5px; padding-left:10px; padding-right:10px;
+padding-top:5px; padding-bottom:5px;
+flex-basis:content; flex-shrink:0;}
+.cta-button-container button:hover {background-color:#1F2937;}
